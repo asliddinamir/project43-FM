@@ -186,7 +186,7 @@ p {
     }
 
     .hero2::after {
-        background: url('images/bg-section-bottom-desktop-1.svg') #fff;
+        background: url('./images/bg-section-bottom-desktop-1.svg') #fff;
         background-size: 100% 169px;
         height: 169px;
     }
@@ -198,7 +198,7 @@ p {
     }
 
     .hero4::after {
-        background: url('images/bg-section-bottom-desktop-2.svg') #fff;
+        background: url('./images/bg-section-bottom-desktop-2.svg') #fff;
         background-size: 100% 169px;
         height: 169px;
     }
@@ -240,4 +240,83 @@ p {
     align-items: center;
     min-height: 60vh;
     gap: 2rem;
+}
+
+.footer::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 169px;
+    background: url('./images/bg-footer-top-desktop.svg') no-repeat center top #fff;
+    background-size: 100% 169px;
+}
+
+.footer {
+    background: var(--Very_Dark_Cyan);
+    color: var(--Very_Pale_Blue);
+}
+
+.footer_inner {
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 6rem;
+}
+
+.fif {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.7rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.lorem {
+    width: 40%;
+    line-height: 1.7;
+}
+
+.fifs {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1.5rem;
+    padding-block: .2rem;
+}
+
+.icons i {
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+    overflow: hidden;
+}
+
+.icons i:hover {
+    transform: scale(1.15);
+}
+
+.fif img {
+    filter: brightness(0) invert(1) grayscale(1);
+}
+
+.attribution {
+    text-align: center;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    padding: .2rem 1rem;
+    background-color: var(--Very_Dark_Cyan);
+    width: 100%;
+}
+
+.attribution a {
+    color: orange;
 }
