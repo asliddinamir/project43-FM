@@ -106,6 +106,17 @@ body {
     transition: .3s ease;
 }
 
+h1 {
+    font-size: 40px;
+    font-family: var(--poppins);
+    color: var(--Very_Dark_Cyan);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
 .heroBtn:hover {
     opacity: .7;
 }
@@ -164,6 +175,22 @@ body {
 
 .hero2 {
     background: var(--Very_Pale_Blue);
-    position: relative;
-    top: 112px;
+}
+
+.hero_inner {
+    display: flex;
+    align-items: center;
+    padding: 5rem 6rem;
+    gap: 8rem;
+}
+
+.hero2_inner img {
+    width: 45%;
+}
+
+.hero2_info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
 }
