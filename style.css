@@ -158,6 +158,26 @@ p {
     background-size: 100% 112px;
 }
 
+.hero4::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 112px;
+    background: url('./images/bg-section-top-mobile-2.svg') no-repeat center top #fff;
+    background-size: 100% 112px;
+}
+
+.hero4::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 112px;
+    background: url('./images/bg-section-bottom-mobile-2.svg') no-repeat center top #fff;
+    background-size: 100% 112px;
+}
+
+
+
 @media(min-width:992px) {
     .hero2::before {
         background: url('./images/bg-section-top-desktop-1.svg') #fff;
@@ -170,10 +190,23 @@ p {
         background-size: 100% 169px;
         height: 169px;
     }
+
+    .hero4::before {
+        background: url('./images/bg-section-top-desktop-2.svg') #fff;
+        background-size: 100% 165px;
+        height: 165px;
+    }
+
+    .hero4::after {
+        background: url('images/bg-section-bottom-desktop-2.svg') #fff;
+        background-size: 100% 169px;
+        height: 169px;
+    }
 }
 
 
-.hero2 {
+.hero2,
+.hero4 {
     background: var(--Very_Pale_Blue);
 }
 
